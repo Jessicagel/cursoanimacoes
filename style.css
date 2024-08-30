@@ -1,0 +1,32 @@
+body{
+    display: grid;
+    font-family: sans-serif;
+    font-size: 300%;
+    height: 100vh;
+    place-items: center;
+    
+   
+}
+.box {
+    position: relative;
+    background-color: #3fded0;
+
+    &:after {
+        animation-name: text-reveal;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        background-color: #623881;
+        transform-box: view-box;
+        
+        
+    }
+}
+    @keyframes text-reveal {
+        from{
+            transform: translateX(0%);
+        }
+        to{
+            transform: translateX(100%) ;
+        }
+    }
+
